@@ -1,0 +1,110 @@
+Writer 1 wrote Civil War
+Writer 3 wrote Endgame
+Writer 6 wrote Infinity Gauntlet
+Writer 9 wrote Black Panther
+Reader 1 read book Infinity Gauntlet
+Reader 4 read book Infinity Gauntlet
+Reader 6 read book Civil War
+Reader 3 read book Infinity Gauntlet
+Writer 2 wrote Gamble of Acheron
+Writer 4 wrote Attack of Polaris
+Reader 9 read book Black Panther
+Reader 7 read book Endgame
+Reader 2 read book Attack of Polaris
+Reader 8 read book Black Panther
+Reader 5 read book Gamble of Acheron
+Writer 12 wrote Hello, Goodbye
+Writer 5 wrote Swipe of Love
+Writer 7 wrote Empire's Tears
+Reader 4 read book Swipe of Love
+Reader 1 read book Endgame
+Reader 6 read book Endgame
+Reader 8 read book Empire's Tears
+Reader 9 read book Civil War
+Reader 5 read book Hello, Goodbye
+Reader 2 read book Civil War
+Reader 8 read book Attack of Polaris
+Reader 1 read book Black Panther
+Reader 2 read book Hello, Goodbye
+Reader 9 read book Swipe of Love
+Reader 6 read book Empire's Tears
+Reader 4 read book Empire's Tears
+Reader 3 read book Swipe of Love
+Reader 7 read book Hello, Goodbye
+Reader 5 read book Attack of Polaris
+Reader 1 read book Civil War
+Reader 4 read book Attack of Polaris
+Reader 5 read book Civil War
+Reader 6 read book Infinity Gauntlet
+Reader 7 read book Civil War
+Reader 9 read book Endgame
+Reader 8 read book Hello, Goodbye
+Reader 3 read book Empire's Tears
+Reader 2 read book Swipe of Love
+Reader 2 read book Infinity Gauntlet
+Reader 7 read book Attack of Polaris
+Reader 8 read book Endgame
+Reader 5 read book Swipe of Love
+Reader 4 read book Civil War
+Reader 3 read book Hello, Goodbye
+Reader 9 read book Empire's Tears
+Reader 1 read book Hello, Goodbye
+Reader 6 read book Black Panther
+Reader 7 read book Empire's Tears
+Reader 1 read book Empire's Tears
+Reader 6 read book Swipe of Love
+Reader 5 read book Empire's Tears
+Reader 9 read book Gamble of Acheron
+Reader 3 read book Gamble of Acheron
+Reader 2 read book Empire's Tears
+Reader 8 read book Civil War
+Reader 4 read book Endgame
+Reader 4 read book Hello, Goodbye
+Reader 3 read book Attack of Polaris
+Reader 7 read book Black Panther
+Reader 5 read book Endgame
+Reader 1 read book Attack of Polaris
+Reader 9 read book Hello, Goodbye
+Reader 6 read book Attack of Polaris
+Reader 8 read book Swipe of Love
+Reader 2 read book Endgame
+Reader 1 read book Gamble of Acheron
+Reader 2 read book Black Panther
+Reader 3 read book Black Panther
+Reader 9 read book Attack of Polaris
+Reader 7 read book Gamble of Acheron
+Reader 8 read book Infinity Gauntlet
+Reader 6 read book Gamble of Acheron
+Reader 4 read book Black Panther
+Reader 5 read book Infinity Gauntlet
+Reader 2 read book Gamble of Acheron
+Reader 7 read book Swipe of Love
+Reader 9 read book Infinity Gauntlet
+Reader 8 read book Gamble of Acheron
+Reader 3 read book Endgame
+Reader 1 read book Swipe of Love
+Reader 5 read book Black Panther
+Reader 6 read book Hello, Goodbye
+Reader 4 read book Gamble of Acheron
+Reader 1 finished reading
+[Infinity Gauntlet, Endgame, Black Panther, Civil War, Hello, Goodbye, Empire's Tears, Attack of Polaris, Gamble of Acheron, Swipe of Love]
+Reader 2 finished reading
+[Attack of Polaris, Civil War, Hello, Goodbye, Swipe of Love, Infinity Gauntlet, Empire's Tears, Endgame, Black Panther, Gamble of Acheron]
+Reader 8 finished reading
+[Black Panther, Empire's Tears, Attack of Polaris, Hello, Goodbye, Endgame, Civil War, Swipe of Love, Infinity Gauntlet, Gamble of Acheron]
+Reader 4 finished reading
+[Infinity Gauntlet, Swipe of Love, Empire's Tears, Attack of Polaris, Civil War, Endgame, Hello, Goodbye, Black Panther, Gamble of Acheron]
+Reader 6 finished reading
+[Civil War, Endgame, Empire's Tears, Infinity Gauntlet, Black Panther, Swipe of Love, Attack of Polaris, Gamble of Acheron, Hello, Goodbye]
+Reader 5 finished reading
+[Gamble of Acheron, Hello, Goodbye, Attack of Polaris, Civil War, Swipe of Love, Empire's Tears, Endgame, Infinity Gauntlet, Black Panther]
+Reader 9 finished reading
+[Black Panther, Civil War, Swipe of Love, Endgame, Empire's Tears, Gamble of Acheron, Hello, Goodbye, Attack of Polaris, Infinity Gauntlet]
+Reader 7 read book Infinity Gauntlet
+Reader 3 read book Civil War
+Reader 7 finished reading
+[Endgame, Hello, Goodbye, Civil War, Attack of Polaris, Empire's Tears, Black Panther, Gamble of Acheron, Swipe of Love, Infinity Gauntlet]
+Reader 3 finished reading
+[Infinity Gauntlet, Swipe of Love, Empire's Tears, Hello, Goodbye, Gamble of Acheron, Attack of Polaris, Black Panther, Endgame, Civil War]
+
+Process finished with exit code 0

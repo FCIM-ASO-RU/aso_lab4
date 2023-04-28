@@ -3,7 +3,6 @@ package aso_lab4;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Random;
 
 public class Writer extends Thread {
@@ -28,7 +27,7 @@ public class Writer extends Thread {
                 synchronized (this) {
                     sleep(random.nextInt(50));
                     library.writeLock.lock();
-                    String filePath = "src/aso_lab4/books.csv";
+                    String filePath = "src/resource/books.csv";
                     try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
                         String line;
                         while ((line = reader.readLine()) != null) {

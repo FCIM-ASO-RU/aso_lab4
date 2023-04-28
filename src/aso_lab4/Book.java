@@ -7,5 +7,5 @@ public class Book {
     public Book(String _title) {
         title = _title;
     }
-    
+    public String getTitle() { return title; }
 }

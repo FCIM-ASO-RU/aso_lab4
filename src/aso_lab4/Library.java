@@ -1,32 +1,40 @@
 package aso_lab4;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.core.config.Configurator;
+
 import java.util.ArrayList;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 public class Library {
-    
+
     final Writer[] writers;
     final Reader[] readers;
-    
+
     private final int max_books;
     private final ArrayList<Book> currentBooks;
     private final ArrayList<Book> addedBooks;
     public final Lock writeLock;
     public final Lock readLock;
-    
+
+    private static final Logger logger = LogManager.getLogger(Library.class);
+
+
     public Library(int _writers, int _readers, int _max_books) {
+        Configurator.initialize(null, "src/resource/log4j2.xml");
         writers = new Writer[_writers];
         readers = new Reader[_readers];
-        
+
         max_books = _max_books;
         currentBooks = new ArrayList<>();
         addedBooks = new ArrayList<>();
-        
+
         ReentrantReadWriteLock rwl = new ReentrantReadWriteLock(true);
         writeLock = rwl.writeLock();
         readLock = rwl.readLock();
-        
+
         for(int i = 0; i < _writers; i++) {
             writers[i] = new Writer(this, "Writer "+(i+1));
             writers[i].start();
@@ -39,19 +47,22 @@ public class Library {
     public synchronized void addBook(Book _book){
         currentBooks.add(_book);
         addedBooks.add(_book);
-        System.out.printf("Library current books: %s \n", getCurrentBooksString());
+        //System.out.printf("Library current books: %s \n", getCurrentBooksString());
+        logger.info("library current books: {}", getCurrentBooksString());
     }
     public synchronized Book getBook(int _index){
         try {
             return currentBooks.get(_index);
         } finally {
             currentBooks.remove(_index);
-            System.out.printf("Library current books: %s \n", getCurrentBooksString());
+            //System.out.printf("Library current books: %s \n", getCurrentBooksString());
+            logger.info("library current books: {}", getCurrentBooksString());
         }
     }
     public synchronized void putBook(Book _book){
         currentBooks.add(_book);
-        System.out.printf("Library current books: %s \n", getCurrentBooksString());
+        //System.out.printf("Library current books: %s \n", getCurrentBooksString());
+        logger.info("library current books: {}", getCurrentBooksString());
     }
     public synchronized String getCurrentBooksString() {
         String currentTitles = "";

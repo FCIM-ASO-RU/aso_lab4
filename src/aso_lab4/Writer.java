@@ -1,5 +1,6 @@
 package aso_lab4;
 
+import java.awt.print.Book;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.concurrent.locks.Lock;
@@ -8,15 +9,7 @@ import java.util.concurrent.locks.Lock;
 public class Writer extends Thread {
     String name;
     //В общем всеми писателями будет написано 9 книг
-    ArrayList<String> bookList = new ArrayList<>(Arrays.asList("Civil War",
-            "Endgame",
-            "Infinity Gauntlet",
-            "Black Panther",
-            "Gamble of Acheron",
-            "Attack of Polaris",
-            "Hello, Goodbye",
-            "Swipe of Love",
-            "Empire's Tears"));
+    private final ArrayList<String> bookList ;
 
     //Здесь не присваевается значение а получается ссылка на статический элемент то есть все что будет происходить будет происходить только с одним элементом
     public final Lock writeLock = Library.writeLock;
@@ -28,6 +21,9 @@ public class Writer extends Thread {
 
     public Writer(String name) {
         this.name = name;
+        //Получаем список книг из файла вызывая статическую переменну.
+        //Так как файл находится в той же дирректории то используем ./ --> что используется для сокращения пути и заменяется в системе как директория где находится этот класс
+        bookList = BookFile.getListOfBooksFrom("./books.txt");
     }
 
     @Override

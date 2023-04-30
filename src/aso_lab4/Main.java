@@ -3,6 +3,7 @@ package aso_lab4;
 public class Main {
 
     public static void main(String[] args) {
+
         //Y=6*2=12
         int readersCount = 12;
         //X=6+3=9

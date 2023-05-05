@@ -1,5 +1,7 @@
 package aso_lab4;
 
+// !!!! папка lib : пкм -> add as library !!!
+
 public class Main {
 
     public static void main(String[] args) {

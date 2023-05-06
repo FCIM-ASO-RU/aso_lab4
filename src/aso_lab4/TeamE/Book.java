@@ -6,4 +6,9 @@ public class Book {
     public Book(String _title) {
         title = _title;
     }
+
+    @Override
+    public String toString() {
+        return "Book{" + "name='" + title + '\'' + '}';
+    }
 }

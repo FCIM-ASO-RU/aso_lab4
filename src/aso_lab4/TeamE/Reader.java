@@ -53,7 +53,7 @@ public class Reader extends Thread {
             }
 
             if (read.size() == library.max_books) {
-                System.out.println("Reader: " + getName() + " have read " + library.max_books + " books.");
+                System.out.println(getName() + " have read " + library.max_books + " books.");
             }
         }
     }

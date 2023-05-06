@@ -1,18 +1,23 @@
 package aso_lab4.TeamE;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Random;
 
 public class Writer extends Thread {
+    final RandomBookGenerator randomBookGenerator;
     final Random random;
 
     final Library library;
     final ArrayList<Book> written;
     
-    public Writer(Library _library, String name) {
+    public Writer(Library _library, String name) throws IOException {
         library = _library;
         written = new ArrayList<>();
+
+        randomBookGenerator = new RandomBookGenerator();
         random = new Random();
+
         setName(name);
     }
     
@@ -25,7 +30,7 @@ public class Writer extends Thread {
                 library.writeLock.lock();
 
                 if (library.books.size() < library.max_books) {
-                    Book newBook = new Book("Book " + (random.nextInt(100)));
+                    Book newBook = randomBookGenerator.books.get(random.nextInt(50));
 
                     if (!written.contains(newBook)) {
                         Thread.sleep(1000);
@@ -49,7 +54,7 @@ public class Writer extends Thread {
             }
 
             if (library.books.size() == library.max_books) {
-                System.out.println("Writer: " + getName() + ". Book list: \n" + written);
+                System.out.println(getName() + ". Book list: \n" + written);
             }
         }
     }

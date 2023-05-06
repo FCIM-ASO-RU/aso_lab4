@@ -1,6 +1,8 @@
 package aso_lab4;
 
+
 import aso_lab4.TeamE.Library;
+import java.io.IOException;
 
 // Группа CR-203 (последняя цифра = 3)
 // Макс. кол-во вариантов 17 (17 студентов в группе)
@@ -11,8 +13,8 @@ import aso_lab4.TeamE.Library;
 
 public class Main {
 
-    public static void main(String[] args) {
-        System.out.println("Team E. Prutean Stanislav & Neer ");
+    public static void main(String[] args) throws IOException {
+        System.out.println("Team E. Prutean & Neer:");
 
         int writers = 18;
         int readers = 30;

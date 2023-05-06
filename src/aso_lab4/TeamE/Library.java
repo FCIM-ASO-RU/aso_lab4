@@ -1,5 +1,6 @@
 package aso_lab4.TeamE;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
@@ -15,7 +16,7 @@ public class Library {
     public final Lock writeLock;
     public final Lock readLock;
     
-    public Library(int _writers, int _readers, int _max_books) {
+    public Library(int _writers, int _readers, int _max_books) throws IOException {
         writers = new Writer[_writers];
         readers = new Reader[_readers];
         
